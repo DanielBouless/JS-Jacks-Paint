@@ -1,4 +1,5 @@
 function configureListeners() {
+<<<<<<< HEAD
     let images = document.querySelectorAll('img')
 
 
@@ -7,6 +8,19 @@ function configureListeners() {
         e.addEventListener('mouseout',removeOpacity);
      })
 }
+=======
+    let images = document.getElementsByTagName('img')
+    console.log(images)
+    // select img elements  
+
+
+     for (var i = 0; i < images.length; i++) {        
+        // iterate over images and add mouseover event listeners 
+        images[i].addEventListener('mouseover', addOpacity)
+        }     
+    } 
+
+>>>>>>> 5e36125958405780565fbddd8d1d5d84c6f93ccb
 
 function addOpacity(event) {
     // add appropriate CSS class
